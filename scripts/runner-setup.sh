@@ -4,7 +4,7 @@
 #!/bin/bash
 
 #Zip download
-rm -rf actions-runner || true
+rm -rf actions-runner-lion || true
 
   echo "Installing Runner!" #Create folder and download zip
   echo "Downloading Zip"
@@ -24,7 +24,7 @@ rm -rf actions-runner || true
   fi
   
   echo "Extracting Zip"
-    mkdir -p actions-runner
-    tar -xvf actions-runner-linux-x64.tar.gz -C actions-runner
+    mkdir -p actions-runner-lion
+    tar -xvf actions-runner-linux-x64.tar.gz -C actions-runner-lion
   echo "Removing Leftovers"
     rm -rf actions-runner-linux-x64.tar.gz # Extract package and remove leftovers

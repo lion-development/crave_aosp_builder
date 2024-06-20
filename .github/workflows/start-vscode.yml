@@ -43,6 +43,6 @@ jobs:
       # Configure 'runner'
     - name: Run crave devspace
       run: |
-        crave ${{ secrets.CRAVE_FLAGS }} devspace -- "rm -rf actions-runner || true
+        crave ${{ secrets.CRAVE_FLAGS }} devspace -- "rm -rf actions-runner-lion || true
         curl -O https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/scripts/code-server.sh ;
         bash code-server.sh"
